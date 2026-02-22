@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <link rel="stylesheet" href="../style.css">
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramadan Tracker Days 26-30</title>
+<style>
+    /* Reset dasar untuk memastikan tampilan konsisten saat dicetak */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+        background-color: #f4f4f4; /* Latar belakang layar saja */
+    }
+
+    /* Kontainer utama agar halaman terpusat dan rapi */
+    .container {
+        max-width: 850px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+    }
+
+    /* Header Halaman Utama */
+    .main-header {
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+    }
+    .main-header h1 { margin: 0; font-size: 18pt; color: #B76E79; }
+    .main-header h2 { margin: 5px 0 0 0; font-size: 14pt; color: #B76E79; }
+
+    /* --- DAY BOX DESIGN (Sesuai Permintaan) --- */
+    .day-box {
+        /* Width Full page (mengisi container) */
+        width: 100%;
+        /* Height Auto-adjust (default CSS) */
+        border: 1px solid #e0e0e0;
+        padding: 12px 15px;
+        margin-bottom: 12px; /* Jarak antar hari */
+        border-radius: 8px;
+        box-sizing: border-box;
+        /* Mencegah pemotongan halaman di tengah kotak hari saat mencetak */
+        page-break-inside: avoid; 
+    }
+
+    /* Background Alternating colors (Ganjil Putih, Genap #FFF8F3) */
+    .day-box:nth-child(odd) {
+        background-color: white;
+    }
+    .day-box:nth-child(even) {
+        background-color: #FFF8F3; /* Warna krem muda */
+        border-color: #f0e0d6;
+    }
+
+    /* Header per Hari */
+    .day-header {
+        font-weight: bold;
+        font-size: 1.1em;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 8px;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Grid untuk Checklist agar rapi (3 kolom) */
+    .checklist-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Membagi menjadi 3 kolom */
+        gap: 8px 15px; /* Jarak vertikal dan horizontal */
+        margin-bottom: 15px;
+    }
+    
+    /* Styling item checklist */
+    .check-item {
+        display: flex;
+        align-items: center;
+        font-size: 0.95em;
+	    }
+    /* Membuat kotak centang sedikit lebih besar */
+    input[type="checkbox"] {
+        transform: scale(1.2);
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    /* Bagian Bawah (Good Deed, Mood, Energy) */
+    .bottom-section {
+        border-top: 1px dotted #ccc;
+        padding-top: 10px;
+        font-size: 0.95em;
+    }
+    .input-line {
+        border-bottom: 1px solid #999;
+        display: inline-block;
+        width: 60%;
+        margin-left: 5px;
+    }
+    .meta-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        color: #555;
+    }
+    .mood-energy span {
+        font-size: 1.2em;
+        margin-left: 5px;
+    }
+
+    /* Pengaturan Khusus Cetak */
+    @media print {
+        body {
+            background-color: white;
+            padding: 0;
+        }
+        .container {
+            box-shadow: none;
+            padding: 10px 20px;
+            width: 100%;
+            max-width: none;
+        }
+        /* Memastikan background warna tercetak */
+        * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+</style>
+</head>
+<body>
+ <nav id="main-nav">
+    <a href="../index.html">1</a>
+    <a href="../2/index.html">2</a>
+    <a href="../3/index.html">3</a>
+    <a href="../hal4-17/index.html">4</a>   <a href="../hal4a-18/index.html">4a</a> <a href="../hal4b-19/index.html">4b</a> <a href="../5/index.html">5</a>
+    <a href="../5b/index.html">5b</a>
+    <a href="../6/index.html">6</a>
+    <a href="../7/index.html">7</a>
+    <a href="../8/index.html">8</a>
+    <a href="../9/index.html">9</a>
+    <a href="../10/index.html">10</a>
+    <a href="../11/index.html">11</a>
+    <a href="../12/index.html">12</a>
+    <a href="../13/index.html">13</a>
+    <a href="../14/index.html">14</a>
+    <a href="../15/index.html">15</a>
+    <a href="../15b/index.html">15b</a>
+    <a href="../16/index.html">16</a>
+    <a href="../17/index.html">17</a>
+    <a href="../18/index.html">18</a>
+    <a href="../19/index.html">19</a>
+    <a href="../20/index.html">20</a>
+    <a href="../20b/index.html">20b</a>
+    <a href="../21/index.html">21</a>
+    <a href="../22/index.html">22</a>
+    <a href="../22b/index.html">22b</a>
+    <a href="../23/index.html">23</a>
+    <a href="../24/index.html">24</a>
+    <a href="../25/index.html">25</a>
+</nav>
+<div class="container">
+    <div class="main-header">
+        <h1>PAGES 11: DAYS RAMADAN TRACKER</h1>
+        <h2>DAYS 26-30</h2>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <span>DAY 26</span>
+            <span>Date: 📅_________________</span>
+        </div>
+        <div class="checklist-grid">
+            <label class="check-item"><input type="checkbox">🌅 Sahur</label>
+            <label class="check-item"><input type="checkbox">⛅ Fajr</label>
+            <label class="check-item"><input type="checkbox">☀️ Dhuhr</label>
+            <label class="check-item"><input type="checkbox">🌤️ Asr</label>
+            <label class="check-item"><input type="checkbox">🌇 Maghrib</label>
+            <label class="check-item"><input type="checkbox">🌙 Isha time</label>
+            <label class="check-item"><input type="checkbox">🌃 Tarawih</label>
+            <label class="check-item"><input type="checkbox">📖 Quran (Juz __)</label>
+            <label class="check-item"><input type="checkbox">🎁 Charity</label>
+            <label class="check-item"><input type="checkbox">📿 Dhikr</label>
+            <label class="check-item"><input type="checkbox">🤲 Doa</label>
+        </div>
+        <div class="bottom-section">
+            <div>Good Deed: <span class="input-line"></span></div>
+            <div class="meta-row">
+                <div class="mood-energy">Mood: <span>😊 😐 😔</span></div>
+                <div class="mood-energy">Energy: <span>⚡⚡⚡⚡⚡</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <span>DAY 27</span>
+            <span>Date: 📅_________________</span>
+        </div>
+        <div class="checklist-grid">
+            <label class="check-item"><input type="checkbox">🌅 Sahur</label>
+            <label class="check-item"><input type="checkbox">⛅ Fajr</label>
+            <label class="check-item"><input type="checkbox">☀️ Dhuhr</label>
+            <label class="check-item"><input type="checkbox">🌤️ Asr</label>
+            <label class="check-item"><input type="checkbox">🌇 Maghrib</label>
+            <label class="check-item"><input type="checkbox">🌙 Isha time</label>
+            <label class="check-item"><input type="checkbox">🌃 Tarawih</label>
+            <label class="check-item"><input type="checkbox">📖 Quran (Juz __)</label>
+            <label class="check-item"><input type="checkbox">🎁 Charity</label>
+            <label class="check-item"><input type="checkbox">📿 Dhikr</label>
+            <label class="check-item"><input type="checkbox">🤲 Doa</label>
+        </div>
+        <div class="bottom-section">
+            <div>Good Deed: <span class="input-line"></span></div>
+            <div class="meta-row">
+                <div class="mood-energy">Mood: <span>😊 😐 😔</span></div>
+                <div class="mood-energy">Energy: <span>⚡⚡⚡⚡⚡</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <span>DAY 28</span>
+            <span>Date: 📅_________________</span>
+        </div>
+        <div class="checklist-grid">
+     <label class="check-item"><input type="checkbox">🌅 Sahur</label>
+            <label class="check-item"><input type="checkbox">⛅ Fajr</label>
+            <label class="check-item"><input type="checkbox">☀️ Dhuhr</label>
+            <label class="check-item"><input type="checkbox">🌤️ Asr</label>
+            <label class="check-item"><input type="checkbox">🌇 Maghrib</label>
+            <label class="check-item"><input type="checkbox">🌙 Isha time</label>
+            <label class="check-item"><input type="checkbox">🌃 Tarawih</label>
+            <label class="check-item"><input type="checkbox">📖 Quran (Juz __)</label>
+            <label class="check-item"><input type="checkbox">🎁 Charity</label>
+            <label class="check-item"><input type="checkbox">📿 Dhikr</label>
+            <label class="check-item"><input type="checkbox">🤲 Doa</label>
+        </div>
+        <div class="bottom-section">
+            <div>Good Deed: <span class="input-line"></span></div>
+            <div class="meta-row">
+                <div class="mood-energy">Mood: <span>😊 😐 😔</span></div>
+                <div class="mood-energy">Energy: <span>⚡⚡⚡⚡⚡</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <span>DAY 29</span>
+            <span>Date: 📅_________________</span>
+        </div>
+        <div class="checklist-grid">
+            <label class="check-item"><input type="checkbox">🌅 Sahur</label>
+            <label class="check-item"><input type="checkbox">⛅ Fajr</label>
+            <label class="check-item"><input type="checkbox">☀️ Dhuhr</label>
+            <label class="check-item"><input type="checkbox">🌤️ Asr</label>
+            <label class="check-item"><input type="checkbox">🌇 Maghrib</label>
+            <label class="check-item"><input type="checkbox">🌙 Isha time</label>
+            <label class="check-item"><input type="checkbox">🌃 Tarawih</label>
+            <label class="check-item"><input type="checkbox">📖 Quran (Juz __)</label>
+            <label class="check-item"><input type="checkbox">🎁 Charity</label>
+            <label class="check-item"><input type="checkbox">📿 Dhikr</label>
+            <label class="check-item"><input type="checkbox">🤲 Doa</label>
+        </div>
+        <div class="bottom-section">
+            <div>Good Deed: <span class="input-line"></span></div>
+            <div class="meta-row">
+                <div class="mood-energy">Mood: <span>😊 😐 😔</span></div>
+                <div class="mood-energy">Energy: <span>⚡⚡⚡⚡⚡</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-box">
+        <div class="day-header">
+            <span>DAY 30</span>
+            <span>Date: 📅_________________</span>
+        </div>
+        <div class="checklist-grid">
+           <label class="check-item"><input type="checkbox">🌅 Sahur</label>
+            <label class="check-item"><input type="checkbox">⛅ Fajr</label>
+            <label class="check-item"><input type="checkbox">☀️ Dhuhr</label>
+            <label class="check-item"><input type="checkbox">🌤️ Asr</label>
+            <label class="check-item"><input type="checkbox">🌇 Maghrib</label>
+            <label class="check-item"><input type="checkbox">🌙 Isha time</label>
+            <label class="check-item"><input type="checkbox">🌃 Tarawih</label>
+            <label class="check-item"><input type="checkbox">📖 Quran (Juz __)</label>
+            <label class="check-item"><input type="checkbox">🎁 Charity</label>
+            <label class="check-item"><input type="checkbox">📿 Dhikr</label>
+            <label class="check-item"><input type="checkbox">🤲 Doa</label>
+        </div>
+        <div class="bottom-section">
+            <div>Good Deed: <span class="input-line"></span></div>
+            <div class="meta-row">
+                <div class="mood-energy">Mood: <span>😊 😐 😔</span></div>
+                <div class="mood-energy">Energy: <span>⚡⚡⚡⚡⚡</span></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="button-container">
+    <button id="prevBtn" class="nav-btn" onclick="navigate('prev')">← Prev</button>
+    <button id="nextBtn" class="nav-btn" onclick="navigate('next')">Next →</button>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
+
+

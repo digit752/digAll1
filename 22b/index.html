@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <title>Daily Blessings - Part 2 (Day 16-30)</title>
+    <style>
+        :root {
+            --blessing-purple: #7E57C2;
+            --soft-lavender: #F3E5F5;
+            --gold-accent: #D4AF37;
+            --text-gray: #455A64;
+            --line-color: #CFD8DC;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #fdfdfd;
+            margin: 0;
+            padding: 20px;
+            color: var(--text-gray);
+        }
+
+        .page-blessings {
+            width: 210mm;
+            min-height: 297mm;
+            background: white;
+            margin: 0 auto;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            box-sizing: border-box;
+            border: 1px solid #eee;
+            position: relative;
+        }
+
+        /* Decorative Corner */
+        .page-blessings::before {
+            content: "🌙";
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 2em;
+            color: var(--gold-accent);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h2 {
+            color: var(--blessing-purple);
+            font-size: 2.2em;
+            margin: 0;
+            font-style: italic;
+        }
+
+        .header p {
+            font-size: 0.9em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold-accent);
+        }
+
+        .gratitude-section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            background: var(--soft-lavender);
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: var(--blessing-purple);
+            margin-bottom: 15px;
+            border-left: 4px solid var(--gold-accent);
+        }
+
+        .log-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .log-num {
+            width: 30px;
+            font-weight: bold;
+            color: var(--gold-accent);
+            font-size: 0.9em;
+        }
+
+        .log-line {
+            flex-grow: 1;
+            border-bottom: 1px solid var(--line-color);
+            height: 20px;
+        }
+
+        /* REFLECTION BOX */
+        .reflection-box {
+            background: #fcfaff;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid var(--soft-lavender);
+            margin-top: 40px;
+        }
+
+        .reflection-box h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            color: var(--blessing-purple);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .row-item {
+            margin-bottom: 15px;
+            font-size: 0.9em;
+        }
+
+        .affirmations-footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .aff-pill {
+            padding: 8px;
+            font-size: 0.75em;
+            border-radius: 20px;
+            background: var(--soft-lavender);
+            color: var(--blessing-purple);
+            font-style: italic;
+        }
+
+        @media print {
+            body { background: none; padding: 0; }
+            .page-blessings { box-shadow: none; border: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+ <nav id="main-nav">
+    <a href="../index.html">1</a>
+    <a href="../2/index.html">2</a>
+    <a href="../3/index.html">3</a>
+    <a href="../hal4-17/index.html">4</a>   <a href="../hal4a-18/index.html">4a</a> <a href="../hal4b-19/index.html">4b</a> <a href="../5/index.html">5</a>
+    <a href="../5b/index.html">5b</a>
+    <a href="../6/index.html">6</a>
+    <a href="../7/index.html">7</a>
+    <a href="../8/index.html">8</a>
+    <a href="../9/index.html">9</a>
+    <a href="../10/index.html">10</a>
+    <a href="../11/index.html">11</a>
+    <a href="../12/index.html">12</a>
+    <a href="../13/index.html">13</a>
+    <a href="../14/index.html">14</a>
+    <a href="../15/index.html">15</a>
+    <a href="../15b/index.html">15b</a>
+    <a href="../16/index.html">16</a>
+    <a href="../17/index.html">17</a>
+    <a href="../18/index.html">18</a>
+    <a href="../19/index.html">19</a>
+    <a href="../20/index.html">20</a>
+    <a href="../20b/index.html">20b</a>
+    <a href="../21/index.html">21</a>
+    <a href="../22/index.html">22</a>
+    <a href="../22b/index.html">22b</a>
+    <a href="../23/index.html">23</a>
+    <a href="../24/index.html">24</a>
+    <a href="../25/index.html">25</a>
+</nav>
+<div class="page-blessings">
+    <div class="header">
+        <h2>Daily Blessings</h2>
+        <p>Week 3-4 Gratitude Log</p>
+    </div>
+
+    <div class="gratitude-section">
+        <div class="section-title">Day 16-20: Allah has favored me with...</div>
+        <script>
+            for(let i=16; i<=20; i++) {
+                document.write(`<div class="log-item"><span class="log-num">${i}.</span><div class="log-line"></div></div>`);
+            }
+        </script>
+    </div>
+
+    <div class="gratitude-section">
+        <div class="section-title">Day 21-25: In these odd nights, I'm thankful for...</div>
+        <script>
+            for(let i=21; i<=25; i++) {
+                document.write(`<div class="log-item"><span class="log-num">${i}.</span><div class="log-line"></div></div>`);
+            }
+        </script>
+    </div>
+
+    <div class="gratitude-section">
+        <div class="section-title">Day 26-30: Closing Ramadan with gratitude for...</div>
+        <script>
+            for(let i=26; i<=30; i++) {
+                document.write(`<div class="log-item"><span class="log-num">${i}.</span><div class="log-line"></div></div>`);
+            }
+        </script>
+    </div>
+
+    <div class="reflection-box">
+        <h3>✨ HARVESTING THE BARAKAH</h3>
+        <div class="row-item">
+            <strong>Most peaceful moment of the month:</strong>
+            <div class="log-line"></div>
+        </div>
+        <div class="row-item">
+            <strong>A prayer I felt deeply connected to:</strong>
+            <div class="log-line"></div>
+        </div>
+        <div class="row-item">
+            <strong>How my heart has changed since Day 1:</strong>
+            <div class="log-line"></div>
+        </div>
+    </div>
+
+    <div class="affirmations-footer">
+        <div class="aff-pill">"My heart is at peace"</div>
+        <div class="aff-pill">"Endless Shukr"</div>
+        <div class="aff-pill">"Allah is Al-Wahhab"</div>
+    </div>
+
+    <p style="text-align: center; font-size: 0.75em; color: #999; margin-top: 30px;">
+        "Which then of the bounties of your Lord will you deny?" (Ar-Rahman)
+    </p>
+</div>
+<div class="button-container">
+    <button id="prevBtn" class="nav-btn" onclick="navigate('prev')">← Prev</button>
+    <button id="nextBtn" class="nav-btn" onclick="navigate('next')">Next →</button>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
+
